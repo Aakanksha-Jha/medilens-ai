@@ -1,0 +1,118 @@
+{
+  "dataset_shape": [
+    569,
+    31
+  ],
+  "outlier_rows_3sigma": 74,
+  "results": {
+    "LogisticRegression": {
+      "accuracy": 0.9473684210526315,
+      "precision": 0.9736842105263158,
+      "recall": 0.8809523809523809,
+      "f1": 0.925,
+      "roc_auc": 0.9778439153439153,
+      "confusion_matrix": [
+        [
+          71,
+          1
+        ],
+        [
+          5,
+          37
+        ]
+      ]
+    },
+    "RandomForest": {
+      "accuracy": 0.956140350877193,
+      "precision": 1.0,
+      "recall": 0.8809523809523809,
+      "f1": 0.9367088607594937,
+      "roc_auc": 0.9910714285714286,
+      "confusion_matrix": [
+        [
+          72,
+          0
+        ],
+        [
+          5,
+          37
+        ]
+      ],
+      "cv_f1_mean": 0.9420660856935367,
+      "cv_f1_std": 0.03240018003621644
+    },
+    "XGBoost": {
+      "accuracy": 0.9473684210526315,
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1": 0.9230769230769231,
+      "roc_auc": 0.9937169312169312,
+      "confusion_matrix": [
+        [
+          72,
+          0
+        ],
+        [
+          6,
+          36
+        ]
+      ]
+    }
+  },
+  "pca_results": {
+    "30": {
+      "f1": 0.925,
+      "fit_time_sec": 0.520197868347168,
+      "explained_variance": 1.0
+    },
+    "10": {
+      "f1": 0.925,
+      "fit_time_sec": 0.38971805572509766,
+      "explained_variance": 0.9486877833156387
+    },
+    "5": {
+      "f1": 0.95,
+      "fit_time_sec": 0.34140920639038086,
+      "explained_variance": 0.8419929662790887
+    },
+    "2": {
+      "f1": 0.926829268292683,
+      "fit_time_sec": 0.2958052158355713,
+      "explained_variance": 0.6288243487650904
+    }
+  },
+  "top_shap_features": [
+    [
+      "worst area",
+      0.08729604259607832
+    ],
+    [
+      "worst concave points",
+      0.0592109256637046
+    ],
+    [
+      "worst perimeter",
+      0.05867152479992115
+    ],
+    [
+      "mean concave points",
+      0.038569866620196326
+    ],
+    [
+      "worst radius",
+      0.03507339308834405
+    ],
+    [
+      "mean concavity",
+      0.02519729589355349
+    ],
+    [
+      "mean radius",
+      0.023483872823610422
+    ],
+    [
+      "area error",
+      0.020971173630235762
+    ]
+  ]
+}

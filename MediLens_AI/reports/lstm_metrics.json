@@ -1,0 +1,5 @@
+{
+  "test_mse_normalized": 0.09889987111091614,
+  "test_mae_bpm": 1.8423265218734741,
+  "note": "Trained on synthetic per-patient heart-rate time series with injected deterioration events. Same architecture applies directly to real EHR vitals streams (heart rate, SpO2, BP, respiration rate)."
+}

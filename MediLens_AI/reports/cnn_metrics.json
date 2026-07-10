@@ -1,0 +1,11 @@
+{
+  "small_cnn_scratch": {
+    "test_loss": 0.0013201518449932337,
+    "test_accuracy": 1.0
+  },
+  "mobilenetv2_transfer": {
+    "test_loss": 0.6931493282318115,
+    "test_accuracy": 0.5
+  },
+  "note": "Trained on synthetic procedurally-generated images as a stand-in for the real Chest X-Ray Pneumonia dataset (not downloadable in this offline sandbox, which only allows package-registry network egress). Architecture is production-ready for the real dataset; with normal internet access weights='imagenet' loads automatically for genuine transfer learning."
+}
